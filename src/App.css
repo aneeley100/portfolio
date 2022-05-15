@@ -14,6 +14,7 @@
   padding-top: 15rem;
   margin-left: 15px;
   margin-right: 15px;
+  animation: 1s ease 0s 1 loadIn;
 }
 
 @media only screen and (max-width: 600px) {
