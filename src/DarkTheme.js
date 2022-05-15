@@ -3,6 +3,7 @@ const { palette } = createMuiTheme();
 const DarkTheme = createTheme({
     dark: true,
     typography: {
+        htmlFontSize: 20,
         h1: {
             fontFamily: 'DM Serif Display',
             fontSize: '4.4rem',
@@ -13,7 +14,7 @@ const DarkTheme = createTheme({
             fontFamily: 'DM Serif Display',
             fontSize: '4.4rem',
             fontWeight: '400',
-            lineHeight: '3.2rem',
+            // lineHeight: '3.2rem',
         },
         h6: {
             fontFamily: 'Roboto Mono',
@@ -22,6 +23,12 @@ const DarkTheme = createTheme({
         },
         body2: {
             fontSize: '1.1rem',
+        },
+        caption: {
+            fontSize: '0.9rem',
+            color: '#8892b0',
+            opacity: 0.35,
+            fontWeight: 'bold'
         },
         fontFamily: [
             "DM Sans",

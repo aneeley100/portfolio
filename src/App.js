@@ -25,14 +25,18 @@ function App() {
         height="100vh"
       >
         <div className="CenterContent">
-          <div className='Hero'>
-            <Stack spacing="2rem">
-              <Typography variant="h6" color="primary">Hi, my name is</Typography>
-              <Typography variant='h2' color="secondary.light">Andrew Neeley.</Typography>
-              <Typography variant='h2' color="secondary">I Craft Experiences.</Typography>
-              <Typography sx={{ pt: '1rem' }}  variant='body2' color="secondary">I'm a software engineer that specializes in building and designing <br /> fantastic digital experiences.</Typography>
-            </Stack>
-          </div>
+          <Stack spacing="2rem">
+            <Typography variant="h6" color="primary">Hi, my name is</Typography>
+            <div>
+              <Typography variant='h2' color="secondary.light" fontSize="clamp(40px, 8vw, 80px)">Andrew Neeley.</Typography>
+              <Typography variant='h2' color="secondary" fontSize="clamp(40px, 8vw, 80px)">I Craft Experiences.</Typography>
+            </div>
+            <Typography sx={{ pt: '1rem' }} variant='body2' color="secondary">I'm a software engineer that specializes in building and designing <br /> fantastic digital experiences.</Typography>
+          </Stack>
+
+          <footer>
+            <Typography variant="caption">Built by Andrew Neeley</Typography>
+          </footer>
         </div>
       </Box>
     </ThemeProvider>
