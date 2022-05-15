@@ -17,15 +17,16 @@ function App() {
         justifyContent="center"
         height="100vh">
         <div className="CenterContent">
-          <Stack spacing="min(3vw, 30px)">
-            <Typography variant="h6">Hi, my name is</Typography>
-            <div>
-              <Typography variant='h2' color="secondary.light" fontSize="clamp(40px, 10vw, 80px)">Andrew Neeley.</Typography>
-              <TitleTyper enabled={production}/>
-            </div>
-            <Typography sx={{ pt: '1rem' }} variant='body2' color="secondary">I'm a software engineer that specializes in building and designing fantastic digital experiences.</Typography>
-          </Stack>
-
+          <div className="Hero">
+            <Stack spacing="min(1vw, 30px)">
+              <Typography variant="h6">Hi, my name is</Typography>
+              <div>
+                <Typography variant='h2' color="secondary.light" fontSize="clamp(40px, 10vw, 80px)">Andrew Neeley.</Typography>
+                <TitleTyper enabled={production} />
+              </div>
+              <Typography sx={{ pt: '1rem', maxWidth: "540px" }} variant='body2' color="secondary">I'm a software engineer that specializes in building and designing fantastic digital experiences.</Typography>
+            </Stack>
+          </div>
           <CustomFooter />
         </div>
       </Box>

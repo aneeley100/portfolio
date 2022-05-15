@@ -20,7 +20,7 @@ function TitleTyper(props) {
     const enabled = props.enabled;
     if (!enabled) {
         return (
-            <Typography sx={{ width: 'clamp(5px, 90vw, 725px)' }} variant='h2' color="secondary" fontSize="clamp(40px, 8vw, 80px)">I Build Experiences.</Typography>
+            <Typography sx={{ width: 'clamp(5px, 90vw, 725px)' }} variant='h2' color="secondary" fontSize="clamp(32px, 8vw, 80px)">I Build Experiences.</Typography>
         );
     } else {
         return (

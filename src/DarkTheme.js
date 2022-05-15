@@ -29,6 +29,7 @@ DarkTheme.typography = {
         fontFamily: 'DM Serif Display',
         fontSize: '4.4rem',
         fontWeight: '400',
+        lineHeight: '1.15',
     },
     h6: {
         fontFamily: 'Roboto Mono',
@@ -39,6 +40,7 @@ DarkTheme.typography = {
     body2: {
         fontSize: '1.1rem',
         fontFamily: 'DM Sans',
+        lineHeight: '1.5',
     },
     caption: {
         fontSize: '0.9rem',
