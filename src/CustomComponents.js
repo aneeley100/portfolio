@@ -1,12 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import { Stack, Typography, CssBaseline, Divider, GridClassKey, Grid, Box } from '@mui/material';
-import LinkIcon from '@mui/icons-material/Link';
-import { ThemeProvider } from '@emotion/react';
-import DarkTheme from './DarkTheme';
+import { Typography } from '@mui/material';
 import TypeAnimation from 'react-type-animation';
-import StarfieldAnimation from 'react-starfield-animation';
 
 function HeadLinks() {
     return (

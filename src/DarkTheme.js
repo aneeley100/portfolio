@@ -1,4 +1,3 @@
-import { ThemeContext } from '@emotion/react';
 import { createTheme } from '@mui/material';
 
 const DarkTheme = createTheme({

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { Stack, Typography, CssBaseline, Divider, GridClassKey, Grid, Box } from '@mui/material';
+import { Stack, Typography, CssBaseline, Box } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 import DarkTheme from './DarkTheme';
 import { TitleTyper, HeadLinks } from './CustomComponents';
