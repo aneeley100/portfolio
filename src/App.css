@@ -16,6 +16,12 @@
   margin-right: 15px;
 }
 
+@media only screen and (max-width: 600px) {
+  .CenterContent {
+    padding-top: 20%;
+  }
+}
+
 footer {
   position: absolute;
   bottom: 0;
