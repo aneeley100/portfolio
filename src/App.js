@@ -29,7 +29,7 @@ function App() {
             <Typography variant="h6" color="primary">Hi, my name is</Typography>
             <div>
               <Typography variant='h2' color="secondary.light" fontSize="clamp(40px, 8vw, 80px)">Andrew Neeley.</Typography>
-              <Typography sx={{width: 'clamp(5px, 90vw, 700px)'}} variant='h2' color="secondary" fontSize="clamp(32px, 8vw, 80px)"><TypeAnimation className="TypeAnimation"
+              <Typography sx={{width: 'clamp(5px, 90vw, 725px)'}} variant='h2' color="secondary" fontSize="clamp(32px, 8vw, 80px)"><TypeAnimation className="TypeAnimation"
                 sequence={['I Build ', 2000, 'I Build Web Apps.', 1500, 'I Build .', 500, 'I Build Solutions??', 500, 'I Build umm', 1000, 'I Build Experiences.']} cursor={false}/></Typography>
             </div>
             <Typography sx={{ pt: '1rem' }} variant='body2' color="secondary">I'm a software engineer that specializes in building and designing <br /> fantastic digital experiences.</Typography>
