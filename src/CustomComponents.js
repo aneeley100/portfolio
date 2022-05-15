@@ -38,8 +38,8 @@ function CustomFooter() {
         return (
             <footer>
                 <Stack>
-                    <Typography variant="caption" color={DarkTheme.palette.primary.dim}>Built by Andrew Neeley</Typography>
-                    <Typography variant="caption" color={DarkTheme.colors.devAlert}>DEV MODE</Typography>
+                    <Typography variant="caption" color={DarkTheme.palette.primary.dim}>Built by Andrew Neeley.</Typography>
+                    <Typography variant="caption" color={DarkTheme.palette.primary.dim}>(Developer Mode)</Typography>
                 </Stack>
             </footer>
         )
