@@ -30,7 +30,7 @@
 
 .TypeAnimation::after {
   content: '';
-  animation: cursor 1.1s 10 step-start;
+  animation: cursor 1.1s 9 step-start;
   /* animation-duration: 9s; */
 }
 
