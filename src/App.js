@@ -25,11 +25,11 @@ function App() {
         height="100vh"
       >
         <div className="CenterContent">
-          <Stack spacing="2rem">
+          <Stack spacing="min(3vw, 30px)">
             <Typography variant="h6" color="primary">Hi, my name is</Typography>
             <div>
               <Typography variant='h2' color="secondary.light" fontSize="clamp(40px, 8vw, 80px)">Andrew Neeley.</Typography>
-              <Typography variant='h2' color="secondary" fontSize="clamp(40px, 8vw, 80px)">I Craft Experiences.</Typography>
+              <Typography variant='h2' color="secondary" fontSize="clamp(32px, 8vw, 80px)">I Craft Experiences.</Typography>
             </div>
             <Typography sx={{ pt: '1rem' }} variant='body2' color="secondary">I'm a software engineer that specializes in building and designing <br /> fantastic digital experiences.</Typography>
           </Stack>
