@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
 
-import { Typography } from '@mui/material';
+import DarkTheme from './DarkTheme';
+import { Typography, Stack } from '@mui/material';
 import TypeAnimation from 'react-type-animation';
+import { ThemeContext } from '@emotion/react';
 
 function HeadLinks() {
     return (
@@ -30,4 +32,24 @@ function TitleTyper(props) {
     }
 }
 
-export { TitleTyper, HeadLinks };
+function CustomFooter() {
+    const production = process.env.REACT_APP_PROD === "true";
+    if (!production) {
+        return (
+            <footer>
+                <Stack>
+                    <Typography variant="caption" color={DarkTheme.palette.primary.dim}>Built by Andrew Neeley</Typography>
+                    <Typography variant="caption" color={DarkTheme.colors.devAlert}>DEV MODE</Typography>
+                </Stack>
+            </footer>
+        )
+    } else {
+        return (
+            <footer>
+                <Typography variant="caption">Built by Andrew Neeley</Typography>
+            </footer>
+        )
+    }
+}
+
+export { TitleTyper, HeadLinks, CustomFooter };

@@ -2,10 +2,14 @@ import { createTheme } from '@mui/material';
 
 const DarkTheme = createTheme({
     dark: true,
+    colors: {
+        devAlert: '#ffa500',
+    },
     palette: {
         mode: 'dark',
         primary: {
             main: '#64ffda',
+            dim: '#8892b0a3',
         },
         secondary: {
             main: '#8892b0',
@@ -39,7 +43,6 @@ DarkTheme.typography = {
     caption: {
         fontSize: '0.9rem',
         color: DarkTheme.palette.secondary.main,
-        opacity: 0.35,
         fontWeight: 'bold',
         fontFamily: "DM Sans"
     },

@@ -1,13 +1,10 @@
 import React from 'react';
 import './App.css';
-
 import { Stack, Typography, CssBaseline, Box } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 import DarkTheme from './DarkTheme';
-import { TitleTyper, HeadLinks } from './CustomComponents';
-
-const animationsEnabled = false;
-
+import { TitleTyper, HeadLinks, CustomFooter } from './CustomComponents';
+var production = process.env.REACT_APP_PROD === "true";
 function App() {
   return (
     <ThemeProvider theme={DarkTheme}>
@@ -24,14 +21,12 @@ function App() {
             <Typography variant="h6">Hi, my name is</Typography>
             <div>
               <Typography variant='h2' color="secondary.light" fontSize="clamp(40px, 10vw, 80px)">Andrew Neeley.</Typography>
-              <TitleTyper enabled={animationsEnabled}/>
+              <TitleTyper enabled={production}/>
             </div>
             <Typography sx={{ pt: '1rem' }} variant='body2' color="secondary">I'm a software engineer that specializes in building and designing fantastic digital experiences.</Typography>
           </Stack>
 
-          <footer>
-            <Typography variant="caption">Built by Andrew Neeley</Typography>
-          </footer>
+          <CustomFooter />
         </div>
       </Box>
     </ThemeProvider>
