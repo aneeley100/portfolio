@@ -5,14 +5,23 @@ const DarkTheme = createTheme({
     typography: {
         h1: {
             fontFamily: 'DM Serif Display',
-            fontSize: '4rem',
+            fontSize: '4.4rem',
+            fontWeight: 'bold',
+            lineHeight: '3rem',
+        },
+        h2: {
+            fontFamily: 'DM Serif Display',
+            fontSize: '4.4rem',
             fontWeight: '400',
-            letterSpacing: '-0.0125em',
-            lineHeight: '4rem',
+            lineHeight: '3.2rem',
         },
         h6: {
             fontFamily: 'Roboto Mono',
-            fontsize: '1rem',
+            fontSize: '1.1rem',
+            fontWeight: '400',
+        },
+        body2: {
+            fontSize: '1.1rem',
         },
         fontFamily: [
             "DM Sans",

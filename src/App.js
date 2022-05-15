@@ -15,7 +15,7 @@ function App() {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display:ital@0;1&family=Roboto+Mono&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display:ital@0;1&family=Roboto+Mono&family=Open+Sans&display=swap" rel="stylesheet" />
       </head>
       <Box
         display="flex"
@@ -28,8 +28,9 @@ function App() {
           <div className='Hero'>
             <Stack spacing="2rem">
               <Typography variant="h6" color="primary">Hi, my name is</Typography>
-              <Typography variant='h1' color="secondary.light">Not Your Everyday<br />Web Developer</Typography>
-              <Typography variant='body1' color="secondary">I'm a software engineer that specializes in building<br />and designing fantastic digital experiences.</Typography>
+              <Typography variant='h2' color="secondary.light">Andrew Neeley.</Typography>
+              <Typography variant='h2' color="secondary">I Craft Experiences.</Typography>
+              <Typography sx={{ pt: '1rem' }}  variant='body2' color="secondary">I'm a software engineer that specializes in building and designing <br /> fantastic digital experiences.</Typography>
             </Stack>
           </div>
         </div>
