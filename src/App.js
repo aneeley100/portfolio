@@ -18,8 +18,11 @@ function App() {
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display:ital@0;1&family=Roboto+Mono&display=swap" rel="stylesheet" />
       </head>
       <Box
-        bgcolor="primary.main"
-        width="50rem"
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+        height="100vh"
       >
         <div className="CenterContent">
           <div className='Hero'>
