@@ -26,7 +26,7 @@ function TitleTyper(props) {
         return (
             <Typography sx={{ width: 'clamp(5px, 90vw, 725px)' }} variant='h2' color="secondary" fontSize="clamp(32px, 8vw, 80px)">
                 <TypeAnimation className="TypeAnimation"
-                    sequence={['I Build ', 2000, 'I Build Web Apps.', 1500, 'I Build .', 500, 'I Build Solutions??', 500, 'I Build umm', 1000, 'I Build Experiences.']} cursor={false} />
+                    sequence={['I Build ', 2000, 'I Build Web Apps.', 1500, 'I Build Solutions.', 1500, 'I Build Experiences.']} cursor={false} />
             </Typography>
         );
     }
