@@ -9,7 +9,7 @@ const DarkTheme = createTheme({
         mode: 'dark',
         primary: {
             main: '#64ffda',
-            dim: '#8892b0a3',
+            dim: '#8892b070',
         },
         secondary: {
             main: '#8892b0',
