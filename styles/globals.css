@@ -2,3 +2,31 @@
   box-sizing: border-box;
   transition: all 0.3s ease;
 }
+
+.terminaltext {
+  font-family: 'Source Code Pro' !important;
+  width: min-content;
+  display: block;
+  position: relative;
+}
+
+.terminaltext::after {
+  color: #ccd6f6;
+  content: "_";
+  font-weight: bold;
+  /* display: block; */
+  clear: both;
+  -webkit-animation: blink 0.9s steps(2, start) infinite;
+  animation: blink 0.9s steps(2, start) infinite;
+  /* display: block; */
+  position: absolute;
+  right: -11px;
+  top: 0;
+  float: right;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
