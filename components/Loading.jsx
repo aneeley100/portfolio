@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material"
 
-export default function Loading() {
+export default () => {
     return (
         <Typography color={"primary"}>Loading...</Typography>
     )
