@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic'
 import { Typewriter } from 'typewriter-effect'
 
 
-export default ({ l1, l2 }) => {
+export default function Splash({ l1, l2 }) {
     const [visible, setVisible] = useState(true)
 
     const [line1Complete, setLine1Complete] = useState(false)

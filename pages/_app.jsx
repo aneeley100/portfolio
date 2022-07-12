@@ -3,7 +3,7 @@ import '../styles/globals.css'
 import { useState, useEffect } from 'react'
 import { createTheme } from '@mui/material'
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   const mainTheme = createTheme({
     typography: {
       fontFamily: '"Source Code Pro", monospace',
@@ -66,5 +66,3 @@ function MyApp({ Component, pageProps }) {
     </ThemeProvider>
   )
 }
-
-export default MyApp
