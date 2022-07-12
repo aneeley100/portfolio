@@ -2,9 +2,8 @@ import { Box, Typography, Fade } from "@mui/material"
 import { useEffect, useState } from "react"
 
 import dynamic from 'next/dynamic'
-const Typewriter = dynamic(() => import("typewriter-effect"), {
-    ssr: false,
-});
+import { Typewriter } from 'typewriter-effect'
+
 
 export default ({ l1, l2 }) => {
     const [visible, setVisible] = useState(true)

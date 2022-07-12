@@ -3,30 +3,51 @@
   transition: all 0.3s ease;
 }
 
+html, body {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .terminaltext {
   font-family: 'Source Code Pro' !important;
-  width: min-content;
-  display: block;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  font-weight: 500;
+  flex-direction: row;
+  font-size: 12pt;
+  color: #64ffda;
   position: relative;
 }
 
 .terminaltext::after {
-  color: #ccd6f6;
   content: "_";
   font-weight: bold;
   /* display: block; */
   clear: both;
-  -webkit-animation: blink 0.9s steps(2, start) infinite;
-  animation: blink 0.9s steps(2, start) infinite;
+  -webkit-animation: blink 0.9s step-end 7.1;
+  animation: blink 0.9s step-end 7.1;
   /* display: block; */
   position: absolute;
+  opacity: 0;
   right: -11px;
   top: 0;
   float: right;
 }
 
 @keyframes blink {
-  to {
-    visibility: hidden;
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }

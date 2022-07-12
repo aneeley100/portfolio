@@ -5,6 +5,15 @@ import { createTheme } from '@mui/material'
 
 function MyApp({ Component, pageProps }) {
   const mainTheme = createTheme({
+    typography: {
+      fontFamily: '"Source Code Pro", monospace',
+      h1: {
+        fontSize: '4rem',
+        fontWeight: '400',
+        letterSpacing: '0px',
+        fontFamily: '"DM Serif Display", serif',
+      },
+    },
     palette: {
       primary: {
         main: '#64ffda'
@@ -43,13 +52,7 @@ function MyApp({ Component, pageProps }) {
     },
   });
 
-  const [activeTheme, setActiveTheme] = useState(startTheme)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setActiveTheme(mainTheme)
-    }, 4000)
-  }, [])
+  const [activeTheme, setActiveTheme] = useState(mainTheme)
 
   return (
     <ThemeProvider theme={activeTheme}>
@@ -57,7 +60,7 @@ function MyApp({ Component, pageProps }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <Component {...pageProps} />
     </ThemeProvider>
