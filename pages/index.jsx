@@ -10,7 +10,7 @@ import Typewriter from 'typewriter-effect';
 export default function Home() {
   const orangeGradient = "linear-gradient(to left, #de6262, #ffb88c)"
   const blueGradient = "linear-gradient(to left, #6CD4FF, #8B80F9)"
-  const greenGradient = "linear-gradient(to left, #7BE0AD, #AEE5D8)"
+  const greenGradient = "linear-gradient(to left, #2adedf, #2fe382)"
   var [gradient, setGradient] = useState(orangeGradient)
 
   const [visible, setVisible] = useState(false)
