@@ -38,7 +38,7 @@ export default function Home() {
             &gt;&nbsp; Hi, my name is
           </Typography>
           <Typography variant="h1" color={"text.primary"} sx={{ fontWeight: 600, fontSize: "min(4rem, 11.5vw)" }}>Andrew Neeley</Typography>
-          <Typography variant="h1" color={"text.dimmest"} sx={{ minWidth: "min(585px, 80vw)", display: "flex", flexDirection: "row", fontSize: "min(3.1rem, 9vw)", marginTop: "12px" }}>I Build
+          <Typography variant="h1" color={"text.dimmest"} sx={{ minWidth: "min(585px, 95vw)", display: "flex", flexDirection: "row", fontSize: "min(3.1rem, 9vw)", marginTop: "12px" }}>I Build
             <div key={gradient} style={gradientStyle}>
               &nbsp;
               <Typewriter
