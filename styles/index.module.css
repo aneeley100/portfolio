@@ -12,6 +12,12 @@
   padding-top: 20px;
 }
 
+.bodyContainer.driftOut {
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translate(-100px);
+}
+
 .termText {
   transition: opacity 1s ease;
   opacity: 100%

@@ -1,9 +1,10 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { Grow, Fade } from '@mui/material'
 import Typewriter from 'typewriter-effect';
+import { useRouter } from 'next/router';
 
 import styles from "../styles/index.module.css"
 
@@ -21,6 +22,10 @@ export default function Home() {
 
   const [fallIn, setFallIn] = useState(false)
 
+  const [driftOut, setDriftOut] = useState(false)
+
+  const router = useRouter();
+
   useEffect(() => {
     setTimeout(() => {
       setNameVisible(true)
@@ -34,9 +39,15 @@ export default function Home() {
       , 7500)
   }, [])
 
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/portfolio")
+    }, 500)
+  }, driftOut)
+
   return (
     <>
-      <Box className={fallIn ? styles.bodyContainer + " " + styles.loaded : styles.bodyContainer}>
+      <Box className={driftOut ? styles.bodyContainer + " " + styles.driftOut : fallIn ? styles.bodyContainer + " " + styles.loaded : styles.bodyContainer}>
         <Box>
           <Typography fontFamily={"Source Code Pro"} color={"primary"} className={`${styles.termText} ${fallIn && styles.loaded}`}>
             &gt;&nbsp; Hi, my name is
@@ -63,6 +74,11 @@ export default function Home() {
                 }} />}
             </div>
           </Typography>
+        </Box>
+        <Box>
+          <Button onClick={() => setDriftOut(true)}>
+            Drift Out
+          </Button>
         </Box>
       </Box>
     </>
