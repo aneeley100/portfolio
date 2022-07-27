@@ -59,6 +59,10 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={activeTheme}>
       <CssBaseline />
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Andrew Neeley | Portfolio</title>
+      </Head>
       <Foot />
       <Component {...pageProps} />
     </ThemeProvider>
