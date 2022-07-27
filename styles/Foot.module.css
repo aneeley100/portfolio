@@ -1,0 +1,19 @@
+.footer {
+  position: fixed;
+  bottom: 25px;
+  right: 0; 
+  width: 25px; 
+  height: 300px;
+}
+
+.footerText { 
+  transform: rotate(90deg);
+  transform-origin: 0; 
+  width: 400px; 
+  font-size: 9pt; 
+  color: #ffffff52;
+}
+
+@media screen {
+  
+}

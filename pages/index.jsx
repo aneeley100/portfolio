@@ -15,7 +15,7 @@ export default function Home() {
 
   const [visible, setVisible] = useState(false)
   const [nameVisible, setNameVisible] = useState(false)
-  const gradientStyle = { minWidth: 325, background: `${gradient}`, color: "primary", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", fontWeight: "700", display: "flex", flexDirection: "row" }
+  const gradientStyle = { background: `${gradient}`, color: "primary", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", fontWeight: "700", display: "flex", flexDirection: "row" }
 
   useEffect(() => {
     setTimeout(() => {
@@ -37,8 +37,8 @@ export default function Home() {
           <Typography fontFamily={"Source Code Pro"} color={"primary"}>
             &gt;&nbsp; Hi, my name is
           </Typography>
-          <Typography variant="h1" color={"text.primary"} sx={{ fontWeight: 600 }}>Andrew Neeley</Typography>
-          <Typography variant="h1" color={"text.dimmest"} sx={{ minWidth: "585px", display: "flex", flexDirection: "row", fontSize: "3.1rem", marginTop: "12px" }}>I Build
+          <Typography variant="h1" color={"text.primary"} sx={{ fontWeight: 600, fontSize: "min(4rem, 11.5vw)" }}>Andrew Neeley</Typography>
+          <Typography variant="h1" color={"text.dimmest"} sx={{ minWidth: "min(585px, 80vw)", display: "flex", flexDirection: "row", fontSize: "min(3.1rem, 9vw)", marginTop: "12px" }}>I Build
             <div key={gradient} style={gradientStyle}>
               &nbsp;
               <Typewriter
