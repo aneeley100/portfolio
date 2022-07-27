@@ -6,7 +6,11 @@ import { Grow, Fade } from '@mui/material'
 import Typewriter from 'typewriter-effect';
 import { useRouter } from 'next/router';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 import styles from "../styles/index.module.css"
+import { ProfileLink } from '../components'
 
 // Have the terminal window add elements to the background of the page
 
@@ -19,41 +23,20 @@ export default function Home() {
   const [visible, setVisible] = useState(false)
   const [nameVisible, setNameVisible] = useState(false)
   const gradientStyle = { background: `${gradient}`, color: "primary", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", fontWeight: "700", display: "flex", flexDirection: "row" }
+  
+  const router = useRouter();
 
   const [fallIn, setFallIn] = useState(false)
 
-  const [driftOut, setDriftOut] = useState(false)
-
-  const router = useRouter();
-
-  useEffect(() => {
-    setTimeout(() => {
-      setNameVisible(true)
-    }
-      , 6500)
-  }, [])
-  useEffect(() => {
-    setTimeout(() => {
-      setVisible(true)
-    }
-      , 7500)
-  }, [])
-
-  useEffect(() => {
-    setTimeout(() => {
-      router.push("/portfolio")
-    }, 500)
-  }, driftOut)
-
   return (
     <>
-      <Box className={driftOut ? styles.bodyContainer + " " + styles.driftOut : fallIn ? styles.bodyContainer + " " + styles.loaded : styles.bodyContainer}>
+      <Box className={fallIn ? styles.bodyContainer + " " + styles.loaded : styles.bodyContainer}>
         <Box>
           <Typography fontFamily={"Source Code Pro"} color={"primary"} className={`${styles.termText} ${fallIn && styles.loaded}`}>
             &gt;&nbsp; Hi, my name is
           </Typography>
           <Typography variant="h1" color={"text.primary"} sx={{ fontWeight: 600, fontSize: "min(4rem, 11.5vw)" }}>Andrew Neeley</Typography>
-          <Typography variant="h1" color={"text.dimmest"} sx={{ minWidth: "min(585px, 95vw)", display: "flex", flexDirection: "row", fontSize: "min(3.1rem, 9vw)", marginTop: "12px" }}>I Build
+          <Typography variant="h1" color={"text.dimmest"} sx={{ minWidth: "min(520px, 95vw)", display: "flex", flexDirection: "row", fontSize: "min(3.1rem, 9vw)", marginTop: "12px" }}>I Build
             <div key={gradient} style={gradientStyle}>
               &nbsp;
               {fallIn ? "Experiences" : <Typewriter
@@ -61,7 +44,7 @@ export default function Home() {
                 onInit={(typewriter) => {
                   if (gradient == greenGradient) {
                     typewriter.typeString('Experiences').callFunction(() => {
-                      setFallIn(true)
+                      //setFallIn(true)
                     }).start();
                   }
                   else {
@@ -75,10 +58,9 @@ export default function Home() {
             </div>
           </Typography>
         </Box>
-        <Box>
-          <Button onClick={() => setDriftOut(true)}>
-            Drift Out
-          </Button>
+        <Box sx={{ mt: "60px", display: "flex", justifyContent: "space-between", flexDirection: "column", alignItems: "center", height: "100px" }}>
+          <ProfileLink href="https://www.github.com/aneeley05">Github&nbsp;<FontAwesomeIcon style={{ fontSize: "13pt" }} icon={faGithub} /> </ProfileLink>
+          <ProfileLink href="https://www.linkedin.com/in/aneeley">LinkedIn&nbsp;<FontAwesomeIcon style={{ fontSize: "13pt" }} icon={faLinkedin} /> </ProfileLink>
         </Box>
       </Box>
     </>

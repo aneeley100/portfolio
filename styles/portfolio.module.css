@@ -1,0 +1,15 @@
+.bodyContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(100px);
+  transition: all 0.5s ease;
+  opacity: 0%;
+}
+
+.bodyContainer.loaded {
+  opacity: 100%;
+  transform: translate(0px);
+}
