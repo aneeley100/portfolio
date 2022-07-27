@@ -40,7 +40,7 @@ export default function Home() {
             <div key={gradient} style={gradientStyle}>
               &nbsp;
               {fallIn ? "Experiences" : <Typewriter
-                options={{ loop: false, delay: 50 }}
+                options={{ loop: false, delay: 50, cursor: "" }}
                 onInit={(typewriter) => {
                   if (gradient == greenGradient) {
                     typewriter.typeString('Experiences').callFunction(() => {
