@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import { useState, useEffect } from 'react'
 import { createTheme } from '@mui/material'
 import { Foot } from '../components'
+import Head from 'next/head'
 
 export default function MyApp({ Component, pageProps }) {
   const mainTheme = createTheme({
@@ -58,11 +59,12 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={activeTheme}>
       <CssBaseline />
-      <head>
+      <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;600;800&family=DM+Serif+Display&family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
-      </head>
+        <title>Andrew Neeley | Portfolio</title>
+      </Head>
       <Foot />
       <Component {...pageProps} />
     </ThemeProvider>
