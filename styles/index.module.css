@@ -1,0 +1,22 @@
+.bodyContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: calc(50vh - 115px);
+  transition: all 2s cubic-bezier(0.25, 0.75, 0.41, 0.93);
+}
+
+.bodyContainer.loaded {
+  padding-top: 20px;
+}
+
+.termText {
+  transition: opacity 1s ease;
+  opacity: 100%
+}
+
+.termText.loaded {
+  opacity: 0%;
+}

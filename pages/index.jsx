@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react'
 import { Grow, Fade } from '@mui/material'
 import Typewriter from 'typewriter-effect';
 
+import styles from "../styles/index.module.css"
+
 // Have the terminal window add elements to the background of the page
 
 export default function Home() {
@@ -16,6 +18,8 @@ export default function Home() {
   const [visible, setVisible] = useState(false)
   const [nameVisible, setNameVisible] = useState(false)
   const gradientStyle = { background: `${gradient}`, color: "primary", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", fontWeight: "700", display: "flex", flexDirection: "row" }
+
+  const [fallIn, setFallIn] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
@@ -32,20 +36,22 @@ export default function Home() {
 
   return (
     <>
-      <Box sx={{ width: "100vw", height: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+      <Box className={fallIn ? styles.bodyContainer + " " + styles.loaded : styles.bodyContainer}>
         <Box>
-          <Typography fontFamily={"Source Code Pro"} color={"primary"}>
+          <Typography fontFamily={"Source Code Pro"} color={"primary"} className={`${styles.termText} ${fallIn && styles.loaded}`}>
             &gt;&nbsp; Hi, my name is
           </Typography>
           <Typography variant="h1" color={"text.primary"} sx={{ fontWeight: 600, fontSize: "min(4rem, 11.5vw)" }}>Andrew Neeley</Typography>
           <Typography variant="h1" color={"text.dimmest"} sx={{ minWidth: "min(585px, 95vw)", display: "flex", flexDirection: "row", fontSize: "min(3.1rem, 9vw)", marginTop: "12px" }}>I Build
             <div key={gradient} style={gradientStyle}>
               &nbsp;
-              <Typewriter
+              {fallIn ? "Experiences" : <Typewriter
                 options={{ loop: false, delay: 50 }}
                 onInit={(typewriter) => {
                   if (gradient == greenGradient) {
-                    typewriter.typeString('Experiences').start();
+                    typewriter.typeString('Experiences').callFunction(() => {
+                      setFallIn(true)
+                    }).start();
                   }
                   else {
                     typewriter.pauseFor(gradient == orangeGradient ? 1000 : 500).typeString(gradient == orangeGradient ? 'Web Apps' : "Solutions").pauseFor(2500).deleteAll()
@@ -54,7 +60,7 @@ export default function Home() {
                       })
                       .start();
                   }
-                }} />
+                }} />}
             </div>
           </Typography>
         </Box>
