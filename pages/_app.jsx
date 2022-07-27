@@ -9,9 +9,9 @@ export default function MyApp({ Component, pageProps }) {
       fontFamily: '"Source Code Pro", monospace',
       h1: {
         fontSize: '4rem',
-        fontWeight: '400',
+        fontWeight: '600',
         letterSpacing: '0px',
-        fontFamily: '"DM Serif Display", serif',
+        fontFamily: '"Montserrat", sans',
       },
     },
     palette: {
@@ -60,7 +60,7 @@ export default function MyApp({ Component, pageProps }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;600;800&family=DM+Serif+Display&family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <Component {...pageProps} />
     </ThemeProvider>
