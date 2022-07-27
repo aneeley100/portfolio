@@ -59,8 +59,8 @@ export default function Home() {
           </Typography>
         </Box>
         <Box sx={{ mt: "60px", display: "flex", justifyContent: "space-between", flexDirection: "column", alignItems: "center", height: "100px" }}>
-          <ProfileLink href="https://www.github.com/aneeley05">Github&nbsp;<FontAwesomeIcon style={{ fontSize: "13pt" }} icon={faGithub} /> </ProfileLink>
-          <ProfileLink href="https://www.linkedin.com/in/aneeley">LinkedIn&nbsp;<FontAwesomeIcon style={{ fontSize: "13pt" }} icon={faLinkedin} /> </ProfileLink>
+          <ProfileLink href="https://www.github.com/aneeley05">Github&nbsp;<FontAwesomeIcon style={{ height: "13pt" }} icon={faGithub} /> </ProfileLink>
+          <ProfileLink href="https://www.linkedin.com/in/aneeley">LinkedIn&nbsp;<FontAwesomeIcon style={{ height: "13pt" }} icon={faLinkedin} /> </ProfileLink>
         </Box>
       </Box>
     </>
