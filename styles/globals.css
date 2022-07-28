@@ -1,57 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+  overflow: hidden;
+  transition: width, height 0ms !important;
+}
+
 * {
   box-sizing: border-box;
-  transition: all 0.3s ease;
-}
-
-html, body {
-  width: 100% !important;
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.terminaltext {
-  font-family: 'Source Code Pro' !important;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  display: flex;
-  font-weight: 500;
-  flex-direction: row;
-  font-size: 12pt;
-  color: #64ffda;
-  position: relative;
-}
-
-.terminaltext::after {
-  content: "_";
-  font-weight: bold;
-  /* display: block; */
-  clear: both;
-  -webkit-animation: blink 0.9s step-end 7.1;
-  animation: blink 0.9s step-end 7.1;
-  /* display: block; */
-  position: absolute;
-  opacity: 0;
-  right: -11px;
-  top: 0;
-  float: right;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-@media (min-width: 600px) {
-  
 }
