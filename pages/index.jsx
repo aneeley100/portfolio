@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { span } from "@mui/material";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Typewriter from "typewriter-effect";
@@ -32,30 +32,18 @@ export default function Home() {
 
   return (
     <>
-      <Box
+      <div
         className="w-screen h-screen flex flex-col items-center justify-center">
-        <Box>
-          <Typography
-            fontFamily={"Source Code Pro"}
-            color={"primary"}>
+        <div>
+          <span className="font-term text-emerald-300">
             &gt;&nbsp; Hi, my name is
-          </Typography>
-          <Typography
-            variant='h1'
-            color={"text.primary"}
-            sx={{ fontWeight: 600, fontSize: "min(4rem, 11.5vw)" }}>
+          </span>
+          <h1
+          className="text-dynamicName">
             Andrew Neeley
-          </Typography>
-          <Typography
-            variant='h1'
-            color={"text.dimmest"}
-            sx={{
-              minWidth: "min(520px, 95vw)",
-              display: "flex",
-              flexDirection: "row",
-              fontSize: "min(3.1rem, 9vw)",
-              marginTop: "12px",
-            }}>
+          </h1>
+          <h1
+          className="text-dynamicSub min-w-dynamicSub flex flex-row mt-3">
             I Build
             <div key={gradient} style={gradientStyle}>
               &nbsp;
@@ -90,9 +78,9 @@ export default function Home() {
               />
 
             </div>
-          </Typography>
-        </Box>
-        <Box className="mt-16 flex flex-col h-28 items-center justify-between">
+          </h1>
+        </div>
+        <div className="mt-16 flex flex-col h-28 items-center justify-between">
           <ProfileLink href='https://www.github.com/aneeley05'>
             Github&nbsp;
             <FontAwesomeIcon className="h-4" icon={faGithub} />{" "}
@@ -104,8 +92,8 @@ export default function Home() {
               icon={faLinkedin}
             />{" "}
           </ProfileLink>
-        </Box>
-      </Box>
+        </div>
+      </div>
     </>
   );
 }

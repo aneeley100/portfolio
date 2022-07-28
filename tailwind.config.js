@@ -5,7 +5,20 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        dynamicName: "min(4rem, 11.5vw)",
+        dynamicSub: 'min(3.1rem, 9vw)',
+      },
+      minWidth: {
+        dynamicSub: 'min(520px, 95vw)',
+      }
+    },
+    fontFamily: {
+      term: ["Source Code Pro", "monospace"],
+      display: ["Montserrat", "sans-serif"],
+      body: ["sans-serif"],
+    },
   },
   plugins: [],
 }
