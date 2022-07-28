@@ -1,4 +1,3 @@
-import { span } from "@mui/material";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import Typewriter from "typewriter-effect";

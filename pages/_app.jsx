@@ -1,7 +1,5 @@
-import { CssBaseline, ThemeProvider } from '@mui/material'
 import '../styles/globals.css'
 import { useState, useEffect } from 'react'
-import { createTheme } from '@mui/material'
 import { Foot } from '../components'
 import Head from 'next/head'
 
