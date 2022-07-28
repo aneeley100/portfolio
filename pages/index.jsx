@@ -39,11 +39,11 @@ export default function Home() {
             &gt;&nbsp; Hi, my name is
           </span>
           <h1
-          className="text-dynamicName">
+          className="text-dynamicName text-slate-400">
             Andrew Neeley
           </h1>
           <h1
-          className="text-dynamicSub min-w-dynamicSub flex flex-row mt-3">
+          className="text-dynamicSub min-w-dynamicSub flex flex-row mt-1">
             I Build
             <div key={gradient} style={gradientStyle}>
               &nbsp;
