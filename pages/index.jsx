@@ -34,15 +34,15 @@ export default function Home() {
       <div
         className="w-screen h-screen flex flex-col items-center justify-center">
         <div>
-          <span className="font-term text-emerald-300">
+          <span className="font-term text-mint-900">
             &gt;&nbsp; Hi, my name is
           </span>
           <h1
-          className="text-dynamicName text-slate-400">
+          className="text-dynamicName">
             Andrew Neeley
           </h1>
           <h1
-          className="text-dynamicSub min-w-dynamicSub flex flex-row mt-1">
+          className="text-dynamicSub min-w-dynamicSub flex flex-row text-slate-400">
             I Build
             <div key={gradient} style={gradientStyle}>
               &nbsp;
@@ -79,13 +79,13 @@ export default function Home() {
             </div>
           </h1>
         </div>
-        <div className="mt-16 flex flex-col h-28 items-center justify-between">
+        <div className="mt-16 flex flex-col h-24 items-center justify-between text-sm">
           <ProfileLink href='https://www.github.com/aneeley05'>
-            Github&nbsp;
+            GITHUB&nbsp;
             <FontAwesomeIcon className="h-4" icon={faGithub} />{" "}
           </ProfileLink>
           <ProfileLink href='https://www.linkedin.com/in/aneeley'>
-            LinkedIn&nbsp;
+            LINKEDIN&nbsp;
             <FontAwesomeIcon
               className="h-4"
               icon={faLinkedin}
