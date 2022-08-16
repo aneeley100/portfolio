@@ -3,6 +3,7 @@ module.exports = {
 	content: [
 		"./pages/**/*.{js,ts,jsx,tsx}",
 		"./components/**/*.{js,ts,jsx,tsx}",
+		"./sections/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
 		extend: {
@@ -15,9 +16,9 @@ module.exports = {
 				navy: {
 					900: "#0a192f",
 				},
-        mint: {
-          900: "#64ffda",
-        }
+				mint: {
+					900: "#64ffda",
+				},
 			},
 			minWidth: {
 				dynamicSub: "min(520px, 95vw)",
@@ -25,7 +26,7 @@ module.exports = {
 		},
 		fontFamily: {
 			term: ["Source Code Pro", "monospace"],
-			display: ["Montserrat", "sans-serif"],
+			display: ["monospace"],
 			body: ["Source Code Pro", "monospace"],
 		},
 	},
