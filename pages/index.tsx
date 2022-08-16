@@ -1,15 +1,32 @@
-import { useState } from "react";
-
-import { About } from "../sections";
+import { useEffect, useRef } from "react";
 import { TitleBar } from "../components";
+import { About } from "../sections";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Home() {
-	const orangeGradient = "linear-gradient(to left, #de6262, #ffb88c)";
-	const blueGradient = "linear-gradient(to left, #6CD4FF, #8B80F9)";
-	const greenGradient = "linear-gradient(to left, #2adedf, #2fe382)";
+	const containerRef = useRef();
+
+	useEffect(() => {
+		gsap.to(containerRef.current, {
+			x: () =>
+				-(
+					containerRef.current.scrollWidth -
+					document.documentElement.clientWidth
+				) + "px",
+			ease: "none",
+			scrollTrigger: {
+				trigger: containerRef.current,
+				invalidateOnRefresh: true,
+				pin: true,
+				scrub: 1,
+				end: () => "+=" + containerRef.current.offsetWidth,
+			},
+		});
+	}, []);
 
 	return (
-		<div className='w-100 h-100'>
+		<div className='w-100 h-100 flex flex-row space-x-16' ref={containerRef}>
 			<TitleBar />
 			<About />
 		</div>
