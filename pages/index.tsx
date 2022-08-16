@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-// Have the terminal window add elements to the background of the page
+import { Title } from "../sections";
 
 export default function Home() {
 	const orangeGradient = "linear-gradient(to left, #de6262, #ffb88c)";
