@@ -6,12 +6,17 @@
 <div id="homepage">
     <h1>Turning ideas into experiences through software.</h1>
     <h4>
-        I'm <b style="font-weight: 800;">Andrew Neeley</b>, a full stack developer based in <b>Phoenix, Arizona</b> with over 7 years of experience.
-        I specialize in building <b>simple, intuitive, and beautiful</b> applications.
-        <br><br>
-        I'm currently looking to join a team of engineers passionate about building great products.
-        <br><br>
-        If you're interested in working together, feel free to reach out! You can find me on <a href="https://github.com/aneeley05">Github</a>, <a href="https://www.linkedin.com/in/aneeley/">LinkedIn</a>, or <a>Email</a> me directly.
+        > <span style="color: var(--code-1);">let</span> <span style="color: var(--code-2);">developer</span> = <span style="color: var(--code-1);">new</span> <span style="color: var(--code-2);">Developer</span>(<span style="color: var(--code-3);">"Andrew Neeley"</span>); <br>
+        > <br>
+        > <span style="color: var(--code-2);">developer</span>.<span style="color: var(--code-4);">set</span>(<span style="color: var(--code-3);">"experience"</span>, <span style="color: var(--code-3);">"7 years"</span>);<br>
+        > <span style="color: var(--code-2);">developer</span>.<span style="color: var(--code-4);">set</span>(<span style="color: var(--code-3);">"languages"</span>, [<span style="color: var(--code-3);">"Javascript"</span>, <span style="color: var(--code-3);">"Typescript"</span>, <span style="color: var(--code-3);">"Python"</span>, <span style="color: var(--code-3);">"Rust"</span>]); <br>
+        > <span style="color: var(--code-2);">developer</span>.<span style="color: var(--code-4);">set</span>(<span style="color: var(--code-3);">"description"</span>, <span style="color: var(--code-3);">"Full stack developer based in Phoenix, Arizona"</span>);<br>
+        > <br>
+        > <span style="color: var(--code-2);">console</span>.<span style="color: var(--code-4);">log</span>(<span style="color: var(--code-2);">developer</span>.<span style="color: var(--code-4);">getGoals</span>());<br>
+         <span style="color: #eaeaea">I'm currently looking to join a team of engineers passionate about building great products.</span><br>
+        <br>
+        > <span style="color: var(--code-2);">console</span>.<span style="color: var(--code-4);">log</span>(<span style="color: var(--code-2);">developer</span>.<span style="color: var(--code-4);">getSocials</span>());<br>
+        <b>If you're interested in working together, feel free to reach out! You can find me on <a href="https://github.com/aneeley05">Github</a>, <a href="https://www.linkedin.com/in/aneeley/">LinkedIn</a>, or <a>Email</a> me directly.</b>
     </h4>
 </div>
 
@@ -43,24 +48,33 @@
         
         width: min(80vw, 900px);
         margin: 0 auto;
-        padding-top: 7rem;
+        padding-top: 5rem;
     }
     h1 {
         font-size: min(3.5rem, 7vw);
         font-family: "JetBrains Mono", monospace;
         font-weight: 700;
         line-height: 1.2;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
         color: #eaeaea;
         letter-spacing: 1.5px;
     }
 
     h4 {
-        font-size: min(1.1rem,3.5vw);
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: min(1rem,3.5vw);
         font-family: "JetBrains Mono";
         font-weight: 400;
         line-height: 1.8;
-        margin-bottom: 1rem;
+        margin-bottom: 5rem;
         color: #eaeaeaaf;
+    }
+    :root {
+        --code-1: salmon;
+        --code-2: rgba(107, 205, 241, 0.952);
+        --code-3: rgba(31, 244, 138, 0.913);
+        --code-4: rgba(25, 113, 255, 0.913);
     }
 </style>
