@@ -4,9 +4,9 @@
   </script>
 
 <div id="topbar">
-    <div class="page-button" class:active={$page.url.pathname == "/"}>Home</div>
-    <div class="page-button" class:active={$page.url.pathname == "/projects"}>Projects</div>
-    <div class="page-button" class:active={$page.url.pathname == "/about"}>About</div>
+    <a href="/"><div class="page-button" class:active={$page.url.pathname == "/"}>Home</div></a>
+    <a href="/projects"><div class="page-button" class:active={$page.url.pathname == "/projects"}>Projects</div></a>
+    <a href="/about"><div class="page-button" class:active={$page.url.pathname == "/about"}>About Me</div></a>
 </div>
 <slot />
 
@@ -21,7 +21,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 4rem;
+        height: 4.3rem;
         background-color: #111111;
         border-bottom: #eaeaea1e solid 1px;
         z-index: 100;
@@ -30,18 +30,31 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: calc(100% - 30px);
-        padding: 0 15px;
+        height: calc(100% - 34px);
+        padding: 0 25px;
         font-size: 0.9rem;
         border-radius: 5px;
-        margin: 0 10px;
+        margin: 0 6px;
+        font-weight: 400;
         font-family: "JetBrains Mono";
-        color: #eaeaea;
+        color: #eaeaeae6;
         transition: all 0.2s ease;
     }
+    .page-button:hover {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
     .page-button.active {
-        font-weight: 500;
-        background-color: rgba(255, 255, 255, 0.158);
-
+        font-weight: 600;
+        color: #eaeaea;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    a {
+        text-emphasis: none;
+        text-decoration: none;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
     }
 </style>

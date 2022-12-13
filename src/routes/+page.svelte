@@ -40,18 +40,19 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 100vh;
+        
         width: min(80vw, 900px);
         margin: 0 auto;
-        padding-top: 5rem;
+        padding-top: 7rem;
     }
     h1 {
         font-size: min(3.5rem, 7vw);
         font-family: "JetBrains Mono", monospace;
         font-weight: 700;
         line-height: 1.2;
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
         color: #eaeaea;
+        letter-spacing: 1.5px;
     }
 
     h4 {
