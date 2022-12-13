@@ -10,3 +10,10 @@ html, body {
 :root {
     --color-splash-1: #00b0ff;
 }
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''), url('/JetBrainsMono.ttf') format('truetype');
+}
