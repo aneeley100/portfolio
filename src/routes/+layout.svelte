@@ -29,6 +29,7 @@
     .page-button {
         display: flex;
         justify-content: center;
+        font-family: "JetBrains Mono", monospace;
         align-items: center;
         height: calc(100% - 34px);
         padding: 0 25px;
@@ -36,7 +37,6 @@
         border-radius: 5px;
         margin: 0 6px;
         font-weight: 400;
-        font-family: "JetBrains Mono";
         color: #eaeaeae6;
         transition: all 0.2s ease;
     }

@@ -1,6 +1,8 @@
 
 html, body {
     font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
     background-color: #111111;
     color: white;
 }

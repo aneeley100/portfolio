@@ -27,6 +27,7 @@
         font-weight: 600;
     }
     a {
+        font-family: "JetBrains Mono", monospace;
         color: #eaeaea;
         text-decoration: underline;
         text-decoration-thickness: 3px;
@@ -61,12 +62,12 @@
     }
 
     h4 {
+        font-size: min(1rem,3.5vw);
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 400;
         background-color: rgba(255, 255, 255, 0.05);
         padding: 1rem;
         border-radius: 8px;
-        font-size: min(1rem,3.5vw);
-        font-family: "JetBrains Mono";
-        font-weight: 400;
         line-height: 1.8;
         margin-bottom: 5rem;
         color: #eaeaeaaf;
