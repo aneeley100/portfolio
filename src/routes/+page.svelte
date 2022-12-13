@@ -16,7 +16,7 @@
          <span style="color: #eaeaea">I'm currently looking to join a team of engineers passionate about building great products.</span><br>
         <br>
         > <span style="color: var(--code-2);">console</span>.<span style="color: var(--code-4);">log</span>(<span style="color: var(--code-2);">developer</span>.<span style="color: var(--code-4);">getSocials</span>());<br>
-        <b>If you're interested in working together, feel free to reach out! You can find me on <a href="https://github.com/aneeley05">Github</a>, <a href="https://www.linkedin.com/in/aneeley/">LinkedIn</a>, or <a>Email</a> me directly.</b>
+        <b>If you're interested in working together, feel free to reach out! You can find me on <a href="https://github.com/aneeley05">Github</a>, <a href="https://www.linkedin.com/in/aneeley/">LinkedIn</a>, or <a href="mailto:aneeley05@gmail.com">Email</a> me directly.</b>
     </h4>
 </div>
 
