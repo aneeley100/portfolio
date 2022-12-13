@@ -1,36 +1,38 @@
 <svelte:head>
     <title>Andrew Neeley | Developer</title>
     <meta name="description" content="Andrew Neeley | Developer">
+    		<link rel="stylesheet" href="%sveltekit.assets%/global.css" />
 </svelte:head>
 <div id="homepage">
     <h1>Turning ideas into experiences through software.</h1>
     <h4>
-        I'm <b>Andrew Neeley</b>, a full stack developer based in <b>Phoenix, Arizona</b> with over 7 years of experience.
+        I'm <b style="font-weight: 800;">Andrew Neeley</b>, a full stack developer based in <b>Phoenix, Arizona</b> with over 7 years of experience.
         I specialize in building <b>simple, intuitive, and beautiful</b> applications.
         <br><br>
         I'm currently looking to join a team of engineers passionate about building great products.
         <br><br>
-        If you're interested in working together, feel free to reach out! You can find me on <a href="https://github.com/aneeley05">Github</a>, <a href="https://www.linkedin.com/in/aneeley/">LinkedIn</a>, or <a>Email me directly</a>.
+        If you're interested in working together, feel free to reach out! You can find me on <a href="https://github.com/aneeley05">Github</a>, <a href="https://www.linkedin.com/in/aneeley/">LinkedIn</a>, or <a>Email</a> me directly.
     </h4>
 </div>
 
 <style>
     b {
-        color: #eaeaea;
+        color: #eaeaeaec;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
     }
     a {
         color: #eaeaea;
+        text-decoration: underline;
         text-decoration-thickness: 3px;
         text-decoration-color: #eaeaeaaf;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         transition: all 0.2s ease;
     }
     a:hover {
-        color: #1997e6;
-        text-decoration-color: #1997e662;
+        color: #eaeaeaaf;
+        text-decoration-color: #eaeaea1e;
         cursor: pointer;
     }
     #homepage {
@@ -53,10 +55,10 @@
     }
 
     h4 {
-        font-size: min(1.2rem,3.5vw);
+        font-size: min(1.1rem,3.5vw);
         font-family: "JetBrains Mono";
         font-weight: 400;
-        line-height: 1.5;
+        line-height: 1.8;
         margin-bottom: 1rem;
         color: #eaeaeaaf;
     }

@@ -1,6 +1,10 @@
 
 html, body {
     font-family: 'JetBrains Mono', monospace;
-    background-color: black;
+    background-color: #111111;
     color: white;
+}
+
+:root {
+    --color-splash-1: #00b0ff;
 }
