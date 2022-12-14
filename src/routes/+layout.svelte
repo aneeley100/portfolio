@@ -1,6 +1,8 @@
 <script>
 	import { page } from '$app/stores';
-	// Get page url
+	
+	// Prerender
+	export const prerender = true;
 </script>
 
 <div id="topbar">
