@@ -10,6 +10,7 @@ const config = {
 	kit: {
 		// default options are shown
 		adapter: vercel({
+			runtime: 'node12',
 		  // if true, will deploy the app using edge functions
 		  // (https://vercel.com/docs/concepts/functions/edge-functions)
 		  // rather than serverless functions
