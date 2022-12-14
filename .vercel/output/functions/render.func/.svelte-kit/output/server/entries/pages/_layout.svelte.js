@@ -8,6 +8,9 @@ const css = {
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $page, $$unsubscribe_page;
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
+  const prerender = true;
+  if ($$props.prerender === void 0 && $$bindings.prerender && prerender !== void 0)
+    $$bindings.prerender(prerender);
   $$result.css.add(css);
   $$unsubscribe_page();
   return `<div id="${"topbar"}" class="${"svelte-3lozj3"}"><a href="${"/"}" class="${"svelte-3lozj3"}"><div class="${["page-button svelte-3lozj3", $page.url.pathname == "/" ? "active" : ""].join(" ").trim()}">Home</div></a>

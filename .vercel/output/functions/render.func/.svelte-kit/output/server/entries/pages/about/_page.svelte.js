@@ -7,7 +7,7 @@ const css = {
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `${$$result.head += `<!-- HEAD_svelte-qhjy02_START -->${$$result.title = `<title>Andrew Neeley | About</title>`, ""}<meta name="${"description"}" content="${"Andrew Neeley | Developer: About me"}"><link rel="${"stylesheet"}" href="${"%sveltekit.assets%/global.css"}"><!-- HEAD_svelte-qhjy02_END -->`, ""}
-<div id="${"page"}" class="${"svelte-q4frw7"}"><img src="${"/andrew.jpg"}" alt="${"Andrew Neeley"}" class="${"about-image svelte-q4frw7"}">
+<div id="${"page"}" class="${"svelte-q4frw7"}"><img src="${"/andrew.png"}" alt="${"Andrew Neeley"}" class="${"about-image svelte-q4frw7"}">
 	<h4 class="${"svelte-q4frw7"}">Hi there! I&#39;m Andrew and I am a full stack software developer. I grew up in Phoenix, Arizona and
 		i&#39;ve been located here ever since. I&#39;ve been very passionate about various fields of technology
 		from a very young age.

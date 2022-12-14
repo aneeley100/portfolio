@@ -1,10 +1,10 @@
 export const manifest = {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["JetBrainsMono.ttf","andrew.jpg","global.css"]),
-	mimeTypes: {".ttf":"font/ttf",".jpg":"image/jpeg",".css":"text/css"},
+	assets: new Set([".DS_Store","JetBrainsMono.ttf","andrew.png","global.css"]),
+	mimeTypes: {".ttf":"font/ttf",".png":"image/png",".css":"text/css"},
 	_: {
-		entry: {"file":"_app/immutable/start-d05a5c4c.js","imports":["_app/immutable/start-d05a5c4c.js","_app/immutable/chunks/index-732481e9.js","_app/immutable/chunks/singletons-5eb566f6.js"],"stylesheets":[],"fonts":[]},
+		entry: {"file":"_app/immutable/start-f132e9d2.js","imports":["_app/immutable/start-f132e9d2.js","_app/immutable/chunks/index-732481e9.js","_app/immutable/chunks/singletons-5eb566f6.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../output/server/nodes/0.js'),
 			() => import('../output/server/nodes/1.js'),
