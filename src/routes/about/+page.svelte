@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="%sveltekit.assets%/global.css" />
 </svelte:head>
 <div id="page">
-	<img src="/andrew.jpg" alt="Andrew Neeley" class="about-image" />
+	<img src="/andrew.png" alt="Andrew Neeley" class="about-image" />
 	<h4>
 		Hi there! I'm Andrew and I am a full stack software developer. I grew up in Phoenix, Arizona and
 		i've been located here ever since. I've been very passionate about various fields of technology
