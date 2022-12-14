@@ -5,9 +5,9 @@
 
 <div id="topbar">
 	<a href="/"><div class="page-button" class:active={$page.url.pathname == '/'}>Home</div></a>
-	<a href="/projects"
+	<!-- <a href="/projects"
 		><div class="page-button" class:active={$page.url.pathname == '/projects'}>Projects</div></a
-	>
+	> -->
 	<a href="/about"
 		><div class="page-button" class:active={$page.url.pathname == '/about'}>About Me</div></a
 	>
